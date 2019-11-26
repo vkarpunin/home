@@ -1,0 +1,19 @@
+bedroom:
+  name: Bedroom
+  entities:
+    - light.bedroom_lights
+    - switch.wall_switch_ln_158d000233d7ad
+    - switch.wall_switch_ln_left_158d00023255b0
+    - switch.wall_switch_ln_left_158d00023ab4c6
+    - switch.wall_switch_ln_right_158d00023255b0
+    - switch.wall_switch_ln_right_158d00023ab4c6
+balcony:
+  name: Balcony
+  entities:
+    - light.balcony_lights
+    - switch.wall_switch_ln_158d0002289818
+residents:
+  name: Residents
+  entities:
+    - person.maria
+    - person.vladimir

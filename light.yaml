@@ -1,0 +1,138 @@
+#
+#---=== BEDROOM ===---
+#
+- platform: xiaomi_miio
+  name: Bedroom Light 1
+  host: 192.168.1.138
+  token: 103b2c62bab13180a98e2c00d56930f1
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Bedroom Light 2
+  host: 192.168.1.215
+  token: 29b53e7c0927a27ac3dd5522d2a21fd5
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Bedroom Light 3
+  host: 192.168.1.4
+  token: 34fe47df6f9c739ae485024cbd8aa813
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Bedroom Light 4
+  host: 192.168.1.136
+  token: 03e7fc0c3ea89a011c711969cfbcace4
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Bedroom Light 5
+  host: 192.168.1.21
+  token: 441b9dedab5779dd72a1e4f06ca07e19
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Bedroom Light 6
+  host: 192.168.1.57
+  token: b0a77b0baaa41c709b6428a44c5bb600
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Bedroom Light 7
+  host: 192.168.1.214
+  token: b1474730fe551459d446490ed1743d7c
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Bedroom Light 8
+  host: 192.168.1.160
+  token: 8eaaf01a8e6c80ec0cb15d72d14a8066
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Bedroom Light 9
+  host: 192.168.1.122
+  token: d6baf433232332b0143545abbad7b841
+  model: philips.light.downlight
+- platform: group
+  name: Bedroom Lights
+  entities:
+    - light.bedroom_light_1
+    - light.bedroom_light_2
+    - light.bedroom_light_3
+    - light.bedroom_light_4
+    - light.bedroom_light_5
+    - light.bedroom_light_6
+    - light.bedroom_light_7
+    - light.bedroom_light_8
+    - light.bedroom_light_9
+#
+#---=== BALCONY ===---
+#
+- platform: xiaomi_miio
+  name: Balcony Light 1
+  host: 192.168.1.234
+  token: 6f055ddbbce929572b9372c0ba174592
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Balcony Light 2
+  host: 192.168.1.237
+  token: 088556efcccb54263425f2fcda60037c
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Balcony Light 3
+  host: 192.168.1.127
+  token: 5061b2e4262228f8ef246cc231999e94
+  model: philips.light.downlight
+- platform: group
+  name: Balcony Lights
+  entities:
+    - light.balcony_light_1
+    - light.balcony_light_2
+    - light.balcony_light_3
+#
+#---=== LIVING ROOM ===---
+#
+- platform: xiaomi_miio
+  name: Living Room Light 1
+  host: 192.168.1.50
+  token: f815f641d702caa277f4d32520f318ee
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Living Room Light 2
+  host: 192.168.1.144
+  token: ba7f5d86eae623bcb11c097c33bd5ac0
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Living Room Light 3
+  host: 192.168.1.189
+  token: 1535d173b67b2a26e929b94208cedc35
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Living Room Light 4
+  host: 192.168.1.24
+  token: be23a16c1196f746af4d8bb3866d67c5
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Living Room Light 5
+  host: 192.168.1.46
+  token: 9713ef3e361322f51f2be9e7bbffc9cb
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Living Room Light 6
+  host: 192.168.1.104
+  token: ae9d69c628d281f4546aaa51cff3fd2d
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Living Room Light 7
+  host: 192.168.1.79
+  token: b0d1ae071fd3702bf7196a9496af456d
+  model: philips.light.downlight
+- platform: xiaomi_miio
+  name: Living Room Light 8
+  host: 192.168.1.87
+  token: 3440a317d29513de230b71b89f2e46dd
+  model: philips.light.downlight
+- platform: group
+  name: Living Room Lights
+  entities:
+    - light.living_room_light_1
+    - light.living_room_light_2
+    - light.living_room_light_3
+    - light.living_room_light_4
+    - light.living_room_light_5
+    - light.living_room_light_6
+    - light.living_room_light_7
+    - light.living_room_light_8

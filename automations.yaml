@@ -1,0 +1,70 @@
+- id: '1571293833265'
+  alias: Kitchen water sensor on alarm notification
+  trigger:
+  - entity_id: binary_sensor.water_leak_sensor_158d00023e8f43
+    platform: state
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+    service: notify.all
+    data:
+      message: Протечка на кухне
+- id: '1571293833266'
+  alias: Kitchen water sensor off alarm notification
+  trigger:
+  - entity_id: binary_sensor.water_leak_sensor_158d00023e8f43
+    platform: state
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+    service: notify.all
+    data:
+      message: Протечка на кухне устранена
+- id: '1572892984463'
+  alias: Turn on light on resident come home
+  trigger:
+  - entity_id: group.residents
+    from: not_home
+    platform: state
+    to: home
+  condition:
+  - condition: state
+    entity_id: input_boolean.use_automations
+    state: 'on'
+  action:
+  - alias: ''
+    service: switch.turn_on
+    data:
+      entity_id: switch.wall_switch_ln_158d000233c9ba
+- id: '1573393019314'
+  alias: Notification when Vladimir come home
+  trigger:
+  - entity_id: person.vladimir
+    from: not_home
+    platform: state
+    to: home
+  condition:
+  - condition: state
+    entity_id: input_boolean.use_notifications
+    state: 'on'
+  action:
+  - data:
+      message: Vivi returned home
+    service: notify.all
+- id: '1573587940611'
+  alias: Notify when Mimi come home
+  trigger:
+  - entity_id: person.maria
+    from: not_home
+    platform: state
+    to: home
+  condition:
+  - condition: state
+    entity_id: input_boolean.use_notifications
+    state: 'on'
+  action:
+  - data:
+      message: Наконец-то ты вернулась, Мими!
+    service: notify.all

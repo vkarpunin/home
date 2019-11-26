@@ -1,0 +1,9 @@
+use_automations:
+  name: Automations
+  icon: mdi:gear
+use_notifications:
+  name: Notifications
+  icon: mdi:message-alert
+alarm_clock:
+  name: Alarm Clock
+  icon: mdi:alarm
